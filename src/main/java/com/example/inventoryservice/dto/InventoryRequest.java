@@ -1,6 +1,4 @@
-package com.example.inventoryservice.models;
-
-import org.springframework.data.annotation.Id;
+package com.example.inventoryservice.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,11 +7,9 @@ import lombok.NoArgsConstructor;
 
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
 @Data
-
-public class Inventory {
-    @Id
+@Builder
+public class InventoryRequest {
     private String id;
     private String skuCode;
     private Integer stock;
